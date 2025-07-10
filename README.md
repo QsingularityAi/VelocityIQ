@@ -161,7 +161,7 @@ python start_dashboard.py
 
 ### 🤖 AI Model Deployment Workflows
 
-#### Option A: AWS JumpStart (Easiest)
+#### AWS JumpStart (Easiest)
 ```bash
 # 1. Create SageMaker execution role
 python create_sagemaker_role.py
@@ -169,24 +169,13 @@ python create_sagemaker_role.py
 # 2. Deploy pre-trained Chronos model
 python deploy_jumpstart_chronos.py
 
-# 3. Run forecasting integration
+# 3. test_jumpstart integration
+python test_jumpstart_endpoint.py
+
+# 4. Run forecasting integration
 python supabase_forecasting_integration.py
 ```
 
-#### Option B: Custom Model Training
-```bash
-# 1. Extract and prepare your data
-python data_extraction.py
-
-# 2. Train custom Chronos model on your data  
-python train_chronos_custom.py
-
-# 3. Deploy your custom model
-python deploy_custom_chronos.py
-
-# 4. Run forecasting pipeline
-python supply_chain_forecasting_pipeline.py
-```
 
 ## 📱 Dashboard Features
 
@@ -493,10 +482,6 @@ python test_jumpstart_endpoint.py           # 🔬 Test model endpoint
 # Run supabase-schema.sql in Supabase SQL editor
 python setup_supabase_schema.py             # 🗄️  Initialize database
 
-# Custom Training (Advanced)
-python data_extraction.py                   # 📊 Extract training data
-python train_chronos_custom.py              # 🎯 Train custom model
-python deploy_custom_chronos.py             # 🚀 Deploy custom model
 ```
 
 **🎉 Happy forecasting with VelocityIQ!** 
