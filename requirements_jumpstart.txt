@@ -1,0 +1,18 @@
+# SageMaker JumpStart Chronos Requirements
+# Minimal dependencies for deploying Chronos via JumpStart
+
+# Core SageMaker SDK
+sagemaker>=2.200.0
+
+# AWS SDK
+boto3>=1.34.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Data handling (for testing)
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Utilities
+python-dateutil>=2.8.0 

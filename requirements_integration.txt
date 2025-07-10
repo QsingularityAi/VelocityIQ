@@ -1,0 +1,17 @@
+# Supabase + JumpStart Chronos Integration Requirements
+# Complete dependencies for production supply chain forecasting
+
+# SageMaker SDK (from JumpStart requirements)
+sagemaker>=2.200.0
+boto3>=1.34.0
+
+# Database connectivity
+psycopg2-binary>=2.9.0
+python-dotenv>=1.0.0
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Utilities
+python-dateutil>=2.8.0 
